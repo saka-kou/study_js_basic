@@ -3,9 +3,17 @@ const btnB = document.getElementById("btnB");
 const btnC = document.getElementById("btnC");
 const result = document.getElementById("result");
 
-let btn = ["btnA", "btnB", "btnC"];
+let btn = [btnA, btnB, btnC];
+let btnName = ["btnA", "btnB", "btnC"]
+
 function message(msg) {
   result.innerText = `${msg}が押された`;
+}
+
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener(`click`, () => {
+    message(btnName[i]);
+  })
 }
 
 
