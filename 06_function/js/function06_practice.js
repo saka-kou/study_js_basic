@@ -3,14 +3,20 @@ const btnB = document.getElementById("btnB");
 const btnC = document.getElementById("btnC");
 const result = document.getElementById("result");
 
-btnA.onclick = () => {
-  result.innerText = "btnAが押された";
+let btn = ["btnA", "btnB", "btnC"];
+function message(msg) {
+  result.innerText = `${msg}が押された`;
 }
 
-btnB.onclick = () => {
-  result.innerText = "btnBが押された";
-}
 
-btnC.onclick = () => {
-  result.innerText = "btnCが押された";
-}
+// btnA.onclick = () => {
+//   result.innerText = "btnAが押された";
+// }
+
+// btnB.onclick = () => {
+//   result.innerText = "btnBが押された";
+// }
+
+// btnC.onclick = () => {
+//   result.innerText = "btnCが押された";
+// }

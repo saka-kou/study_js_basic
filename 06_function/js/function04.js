@@ -4,7 +4,8 @@ const result = document.getElementById("result");
 const btn = document.getElementById("btn");
 
 function setpx(set) {
-    return set + (`${set} + px`)
+    Number(set);
+    return (`${set}px`)
 }
 
 btn.onclick = () => {

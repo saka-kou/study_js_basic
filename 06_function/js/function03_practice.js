@@ -8,7 +8,7 @@ function message(val) {
 }
 
 btn.onclick = () => {
-    message(document.getElementById("text").value);
+    message(text.value);
 }
 
 // btn.onclick = () => {
