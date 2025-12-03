@@ -15,15 +15,15 @@ let cities = [
   { name: '箕面市', population: 136277 },
   { name: '門真市', population: 119795 }
 ];
-
 const result = document.getElementById("result");
-
-const filter = cities.population.filter((e, i, a) => {
-  console.log(e, i, a);
-  return e > 400000;
+console.log(cities.length);
+const filter = cities.filter((city, i, a) => {
+  console.log(city);
+  return city.population > 400000;
   //cities.filter(e > 400000);
 });
+console.log(filter);
 
-cities.forEach((e, i) => {
-  result.innerText += e + ",";
+filter.forEach((e, i) => {
+  result.innerText += `${e.name}:${e.population}` + ",";
 })
