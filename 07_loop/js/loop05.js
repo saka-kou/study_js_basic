@@ -7,3 +7,14 @@ const fruit = [
   { name: 'mango', price: 680 }
 ];
 
+const out = document.querySelector("#out");
+
+const result = fruit.reduce((prev, current) => {
+  // const result = 0;
+  return prev + current.price;
+}, 0);
+
+console.log(result);
+
+out.innerText = `${result}円です`;
+
