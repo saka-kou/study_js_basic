@@ -12,9 +12,17 @@ const out = document.querySelector("#out");
 const text = document.querySelector("#name");
 
 btn.onclick = () => {
-  const result = fruits.find(name => name == text.value);
-  // console.log(name.value);
+  // console.log(text.value);
+  // const result = fruits.find(name => name == text.value);
+  const result = fruits.find(e => e.name == text.value);
   console.log(result);
-  out.innerText = `${result}です`;
+  // console.log(result.name, result.price);
+  out.innerText = `${result.name}：価格は${result.price}円です`;
 }
 
+
+// const data = test.find( value => {
+//   return e.name == text.value;
+// });
+
+// const data = test.find( (value,data) =>  e.name == text.value);
