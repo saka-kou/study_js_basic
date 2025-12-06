@@ -21,7 +21,7 @@ for (let i = 0; i < btns.length; i++) {
 // btnA.onclick = () => {
 //   result.innerText = "btnAが押された";
 // }
-
+z
 // btnB.onclick = () => {
 //   result.innerText = "btnBが押された";
 // }

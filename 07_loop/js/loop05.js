@@ -9,10 +9,11 @@ const fruit = [
 
 const out = document.querySelector("#out");
 
-const result = fruit.reduce((prev, current) => {
-  // const result = 0;
-  return prev + current.price;
-}, 0);
+// const result = fruit.reduce((prev, current) => {
+//   return prev + current.price;
+// }, 0);
+
+const result = fruit.reduce((prev, current) => prev + current.price, 0);
 
 console.log(result);
 

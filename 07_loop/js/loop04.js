@@ -20,7 +20,7 @@ btn.onclick = () => {
   out.innerText = `${result.name}：価格は${result.price}円です`;
 }
 
-
+h ^ h
 // const data = test.find( value => {
 //   return e.name == text.value;
 // });
