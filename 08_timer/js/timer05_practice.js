@@ -11,4 +11,4 @@ setInterval(() => {
         count = 0;
         // photos[count].style.zIndex = numArray[count];
     }
-}, 2000);
+}, 1000);
